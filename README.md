@@ -4,13 +4,13 @@ This project uses **`uv`** for lightning-fast, reproducible dependency managemen
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Jimmychuyucheng/GenAI_RAG-Lab.git](https://github.com/Jimmychuyucheng/GenAI_RAG-Lab.git)
+git clone https://github.com/Jimmychuyucheng/GenAI_RAG-Lab.git
 cd GenAI_RAG-Lab
 ```
 
 ### 2. Set Up Virtual Environment & Dependencies
-```bash
 Create venv and lock dependencies automatically
+```bash
 uv venv
 uv add sentence-transformers chromadb google-genai python-doten
 ```

@@ -1,3 +1,32 @@
+## 運行方法：
+
+This project uses **`uv`** for lightning-fast, reproducible dependency management.
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Jimmychuyucheng/GenAI_RAG-Lab.git](https://github.com/Jimmychuyucheng/GenAI_RAG-Lab.git)
+cd GenAI_RAG-Lab
+```
+
+### 2. Set Up Virtual Environment & Dependencies
+```bash
+Create venv and lock dependencies automatically
+uv venv
+uv add sentence-transformers chromadb google-genai python-doten
+```
+
+### 3. Configure Environment Variables
+Create a .env file in the root directory and add your Google AI Studio API Key:
+```bash
+GEMINI_API_KEY=your_actual_api_key_here
+```
+
+### 4. Run the Pipeline
+Open main.ipynb in VS Code, select the .venv kernel, and run all cells to see the Two-Stage RAG in action!
+
+---
+
+## 程式碼運作流程
 ### 1. Document Chunking（文本切塊）
 這是 RAG 的起點。大模型（LLM）有 token 長度限制，且過長的文本會稀釋關鍵資訊，因此必須先將大文件切碎。
 
